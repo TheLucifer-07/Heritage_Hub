@@ -6,29 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Onam Outfits</title>
   <link rel="stylesheet" href="css/wear.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 </head>
 <body>
-  <header class="header1">
+  <header class="header1" data-aos="fade-down">
     <h1>Onam Traditional Outfits</h1>
 
   </header>
 
   <main>
-    <article class="outfit-article">
-      <img src="images/onam-1.jpeg" alt="Kasavu Saree">
+    <article class="outfit-article" data-aos="fade-right">
+      <img src="images/onam-1.jpeg" alt="Kasavu Saree" data-aos="flip-right">
       <div class="outfit-info">
         <h2>Kasavu Saree</h2>
         <p>The golden-bordered Kasavu saree is the iconic attire for women during Onam celebrations.</p>
       </div>
     </article>
 
-    <article class="outfit-article">
-      <img src="images/onam-2.jpg" alt="Mundu for Men">
+    <article class="outfit-article" data-aos="fade-right">
+      <img src="images/onam-2.jpg" alt="Mundu for Men" data-aos="flip-right">
       <div class="outfit-info">
         <h2>Mundu</h2>
         <p>Men traditionally wear a white dhoti (mundu) with a golden border, symbolizing simplicity and elegance.</p>
       </div>
     </article>
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, 
+      offset: 100,    
+      once: true      
+    });
+  </script>
 </body>
 </html>
