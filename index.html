@@ -11,11 +11,12 @@
     <link rel="stylesheet" href="css/chatbot.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/wear.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
     <title>Heritage-Hub</title>
 </head>
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar" data-aos="fade-down">
             <h2>Heritage Hub</h2>
             <ol class="menu">
                 <li>Home</li>
@@ -28,13 +29,13 @@
         </nav>
     </header>
     <section class="welcome">
-    <div class="overlay">
+    <div class="overlay" data-aos="zoom-out">
       <h1>Welcome to Heritage Hub</h1>
       <p>Discover the beauty of tradition and culture</p>
       <button class="explorebtn" onclick="showExploreContent('cultures')">Explore Culture</button>
     </div>
     </section>
-    <section class="cta-section" id="cta">
+    <section class="cta-section" id="cta" data-aos="flip-up">
         <h2>Explore Our Features</h2>
         <p>Choose a path to dive into the world of traditions and cultures</p>
         <div class="cta-buttons">
@@ -49,7 +50,7 @@
        <section class="explore-culture-container">
         <div id="cultures" class="explore-content active">
        <h2>Explore Culture</h2>
-       <div class="festival-buttons">
+       <div class="festival-buttons" data-aos="flip-up">
            <button class="festival-btn active" data-target="diwali">Diwali</button>
            <button class="festival-btn" data-target="holi">Holi</button>
            <button class="festival-btn" data-target="chinese-new-year">Chinese New Year</button>
@@ -59,7 +60,7 @@
            <button class="festival-btn" data-target="jeju-fire">Jeju Fire Festival</button>
            <button class="festival-btn" data-target="banjara">Banjara Folk Tradition</button>
         </div>
-    <div class="festival-texts">
+    <div class="festival-texts" data-aos="zoom-in">
         <!-- Diwali -->
         <div class="festival-text diwali-text" id="diwali" style="display:block;">
             <h4>History of Diwali</h4>
@@ -93,7 +94,7 @@
             <button class="explore-btn" onclick="location.href='food.html'">🍲 Go to Food</button>
         </div>
         <!-- Holi -->
-        <div class="festival-text holi-text" id="holi">
+        <div class="festival-text holi-text" id="holi" data-aos="zoom-in">
             <h4>History of Holi</h4>
             <p>Holi's history is rooted in two Hindu mythological stories: the victory of good over evil through the tale of Prahlad and Holika, commemorated by Holika Dahan (bonfires), and the playful divine love between Lord Krishna and Radha. It also marks the arrival of spring, the end of winter, and harvest time, blending spiritual, historical, and cultural traditions.</p>
             <h5>The Legend of Prahlad and Holika</h5>
@@ -134,7 +135,7 @@
             <button class="explore-btn" onclick="location.href='food.html'">🍲 Go to Food</button>
         </div>
         <!-- Chinese New Year -->
-        <div class="festival-text chinese-text" id="chinese-new-year">
+        <div class="festival-text chinese-text" id="chinese-new-year" data-aos="zoom-in">
             <h4>History of Chinese New Year</h4>
     <p>Chinese New Year's history dates back thousands of years to the Shang Dynasty (14th century BCE) and is rooted in agricultural practices and the ancient Chinese lunar calendar. Legend says a beast called Nian was scared by loud noises and the color red, leading to traditions like firecrackers and red decorations still used today. Key practices like cleaning homes, large family dinners, and paying respects to ancestors also developed over centuries, with the Han dynasty (202 BC – 220 AD) first recording new year celebrations.</p>
 
@@ -162,7 +163,7 @@
          <button class="explore-btn" onclick="location.href='food.html'">🍲 Go to Food</button>
         </div>
         <!-- Cherry Blossom -->
-        <div class="festival-text cherry-text" id="cherry-blossom">
+        <div class="festival-text cherry-text" id="cherry-blossom" data-aos="zoom-in">
             <h4>History of Cherry Blossom Festival (Hanami) - Japan</h4>
     <p>The tradition of cherry blossom viewing, or <strong>Hanami</strong>, dates back to the Nara Period (710-794) with plum blossoms, shifting to cherry blossoms in the Heian Period (794-1185). Emperor Saga hosted the first recorded cherry blossom viewing in 812. Over time, it became a nationwide cultural phenomenon, symbolizing the ephemeral nature of life (mono no aware).</p>
 
@@ -213,7 +214,7 @@
         <button class="explore-btn" onclick="location.href='food.html'">🍲 Go to Food</button>
         </div>
         <!-- Eid-al-Fitr -->
-        <div class="festival-text eid-text" id="eid">
+        <div class="festival-text eid-text" id="eid" data-aos="zoom-in">
             <h4>History of Eid al-Fitr</h4>
     <p>Eid al-Fitr's history begins in 624 CE when Prophet Muhammad established the celebration after the Battle of Badr, marking the end of Ramadan, a holy month of fasting and reflection. The festival commemorates the spiritual discipline of Ramadan and is a time for Muslims to express gratitude, give charity (Zakat), and come together as a community.</p>
 
@@ -241,7 +242,7 @@
         <button class="explore-btn" onclick="location.href='food.html'">🍲 Go to Food</button>
         </div>
         <!-- Onam -->
-        <div class="festival-text onam-text" id="onam">
+        <div class="festival-text onam-text" id="onam" data-aos="zoom-in">
             <h4>History of Onam</h4>
     <p>Onam is an annual Hindu harvest festival in Kerala, India, commemorating the homecoming of King Mahabali. Celebrated in the Malayalam month of Chingam (August-September), it marks agricultural harvest and is a time of equality and prosperity. Traditions include flower carpets (Pookalam), grand feasts (Sadya), boat races (Vallam Kali), and folk dances.</p>
 
@@ -281,7 +282,7 @@
         <button class="explore-btn" onclick="location.href='food.html'">🍲 Go to Food</button>
         </div>
         <!-- Jeju Fire Festival -->
-        <div class="festival-text jeju-text" id="jeju-fire">
+        <div class="festival-text jeju-text" id="jeju-fire" data-aos="zoom-in">
             <h4>History of Jeju Fire Festival</h4>
     <p>The Jeju Fire Festival is a modern event, first held in 1997, inspired by the ancient agricultural practice of <strong>bangae</strong>, or field burning, to renew grass and eliminate pests. It symbolizes a fresh start for a prosperous year while celebrating traditional Korean agricultural culture.</p>
 
@@ -315,7 +316,7 @@
         <button class="explore-btn" onclick="location.href='food.html'">🍲 Go to Food</button>
         </div>
         <!-- Banjara Folk Tradition -->
-        <div class="festival-text banjara-text" id="banjara">
+        <div class="festival-text banjara-text" id="banjara" data-aos="zoom-in">
             <h4>History of Banjara Folk Tradition</h4>
     <p>The Banjara community historically emerged from nomadic pastoralist traders in India, with roots in Rajasthan. They transported goods like salt and grains using animal caravans, and their oral traditions, rich in folk songs, dances, and unique crafts such as intricate embroidery, form the core of their folk culture. Today, many Banjaras have settled into farming and mainstream professions, while still maintaining their distinctive cultural practices and festivals.</p>
 
@@ -354,7 +355,7 @@
         </div>
     </div>
     </div>
-     <section id="festivals" class="festivals-section hidden">
+     <section id="festivals" class="festivals-section hidden" data-aos="flip-up">
     <header class="festivals-header">
     <h1>🌍 Festival Event Calendar</h1>
     <p>Discover cultural festivals around the world</p>
@@ -406,10 +407,10 @@
     </main>
     </section>
     <div class="explore-content" id="wear">
-    <div class="wear-culture" class="explore-content active">
-            <h1>Wear the Culture</h1>
-            <p>Explore traditional outfits, their history, and cultural significance.</p>  
-        <main class="catalog">
+    <div class="wear-culture" class="explore-content active" data-aos="flip-right">
+            <h1 data-aos="zoom-in">Wear the Culture</h1>
+            <p  data-aos="zoom-in">Explore traditional outfits, their history, and cultural significance.</p>  
+        <main class="catalog" data-aos="flip-right">
             <div class="outfit-card">
                 <img src="images/diwali.jpeg" alt="Diwali">
                 <h3>Diwali</h3>
@@ -594,8 +595,8 @@
       <button id="send-btn">Send</button>
     </div>
     </div>
-    <section class="about-section" id="about">
-    <div class="about-container">
+    <section class="about-section" id="about" >
+    <div class="about-container" data-aos="fade-up">
     <h2>About Us</h2>
     <p class="mission">
       At <strong>Heritage Hub</strong>, we believe that culture is the soul of humanity.
@@ -623,7 +624,7 @@
     </div>
     </section>  
     <!-- Contact Form -->
-    <section id="contact" class="contact-section">
+    <section id="contact" class="contact-section" data-aos="slide-up">
     <h2>Get in Touch</h2>
     <form>
         <input type="text" placeholder="First Name" required>
@@ -691,6 +692,19 @@
   }
   }
     </script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 120, 
+    delay: 0, 
+    duration: 400, 
+    easing: 'ease', 
+    once: false, 
+    mirror: false, 
+    anchorPlacement: 'top-bottom', 
+    duration: 800;
+  });
+</script>
     <script src="js/events.js" defer></script>
     <script src="js/chatbot.js"></script>
 </body>
