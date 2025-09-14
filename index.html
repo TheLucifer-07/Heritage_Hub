@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/chatbot.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/wear.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Heritage-Hub</title>
 </head>
 <body>
@@ -692,19 +692,13 @@
   }
   }
     </script>
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-  AOS.init({
-    offset: 120, 
-    delay: 0, 
-    duration: 400, 
-    easing: 'ease', 
-    once: false, 
-    mirror: false, 
-    anchorPlacement: 'top-bottom', 
-    duration: 800;
-  });
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            offset: 100,
+        });
+    </script>
     <script src="js/events.js" defer></script>
     <script src="js/chatbot.js"></script>
 </body>
