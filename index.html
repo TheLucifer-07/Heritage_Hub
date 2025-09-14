@@ -1,0 +1,697 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/explore.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/wear.css">
+    <title>Heritage-Hub</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h2>Heritage Hub</h2>
+            <ol class="menu">
+                <li>Home</li>
+                <li><a href="#cta">Explore Features</a></li>
+                <li><a href="#chatbot">Tradition Talk</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ol>
+            <div class="login"><p>Login/<span>SignUp</span></p></div>
+        </nav>
+    </header>
+    <section class="welcome">
+    <div class="overlay">
+      <h1>Welcome to Heritage Hub</h1>
+      <p>Discover the beauty of tradition and culture</p>
+      <button class="explorebtn" onclick="showExploreContent('cultures')">Explore Culture</button>
+    </div>
+    </section>
+    <section class="cta-section" id="cta">
+        <h2>Explore Our Features</h2>
+        <p>Choose a path to dive into the world of traditions and cultures</p>
+        <div class="cta-buttons">
+            <button class="explore-btn" onclick="showExploreContent('cultures')">🌍 Explore Cultures</button>
+            <button class="explore-btn" onclick="showExploreContent('wear')">👘 Wear the Culture</button>
+            <button class="explore-btn" onclick="location.href='food.html'">🍲 Cultural Food Explorer</button>
+            <button class="explore-btn" onclick="showExploreContent('festivals')">🎉 Festivals & Events</button>
+            <button class="explore-btn" onclick="location.href='route.html'">📖 Cultural Etiquette Guide</button>
+            <button class="explore-btn" onclick="showExploreContent('chatbot')">🤖🌐 AI Cultural Buddy</button>
+        </div>
+       </section>
+       <section class="explore-culture-container">
+        <div id="cultures" class="explore-content active">
+       <h2>Explore Culture</h2>
+       <div class="festival-buttons">
+           <button class="festival-btn active" data-target="diwali">Diwali</button>
+           <button class="festival-btn" data-target="holi">Holi</button>
+           <button class="festival-btn" data-target="chinese-new-year">Chinese New Year</button>
+           <button class="festival-btn" data-target="cherry-blossom">Cherry Blossom</button>
+           <button class="festival-btn" data-target="eid">Eid-al-Fitr</button>
+           <button class="festival-btn" data-target="onam">Onam</button>
+           <button class="festival-btn" data-target="jeju-fire">Jeju Fire Festival</button>
+           <button class="festival-btn" data-target="banjara">Banjara Folk Tradition</button>
+        </div>
+    <div class="festival-texts">
+        <!-- Diwali -->
+        <div class="festival-text diwali-text" id="diwali" style="display:block;">
+            <h4>History of Diwali</h4>
+            <p>Diwali, also known as Deepavali, is rooted in the triumph of light over darkness and good over evil. Regional variations include Lord Rama's return to Ayodhya in northern India, Lord Krishna's victory over Narakasura in southern India, and the worship of Goddess Lakshmi in western India for prosperity. The lighting of diyas symbolizes guiding the way home and celebrating inner light. Jains celebrate Mahavira's liberation, and Sikhs observe Guru Hargobind's release.</p>
+
+            <h5>Event Date</h5>
+            <p>Diwali follows the Hindu lunisolar calendar, occurring between late October and early November. In 2024, the main day is Thursday, October 31st (Amavasya Tithi of Kartik month).</p>
+
+            <h5>Venue / Location</h5>
+            <p>Celebrated across India and by the Indian diaspora worldwide. Traditionally, in homes, temples, and community centers.</p>
+
+            <h5>How to Celebrate</h5>
+            <ol>
+                <li><strong>Clean your home:</strong> To welcome Goddess Lakshmi.</li>
+                <li><strong>Decorate with lights:</strong> Diyas, candles, and decorative lights.</li>
+                <li><strong>Create Rangoli:</strong> Patterns at entrances made of colored powders or flowers.</li>
+                <li><strong>Wear new clothes:</strong> Dress in traditional attire.</li>
+                <li><strong>Share sweets and gifts:</strong> Ladoos, jalebi, and other traditional sweets.</li>
+                <li><strong>Perform Lakshmi Puja:</strong> Offer prayers for prosperity and good fortune.</li>
+                <li><strong>Light fireworks:</strong> Celebrate responsibly.</li>
+                <li><strong>Family & Community:</strong> Gather, share stories, and enjoy festivities.</li>
+            </ol>
+
+            <h5>Traditions by Region</h5>
+            <ul>
+                <li><strong>Northern India:</strong> Lord Rama's return to Ayodhya.</li>
+                <li><strong>Southern India:</strong> Krishna defeating Narakasura.</li>
+                <li><strong>Western India:</strong> Worship of Goddess Lakshmi for wealth.</li>
+            </ul>
+            <button class="explore-btn" ><a href="diwali.html" >👘 Go to View Cloths</a></button>  
+            <button class="explore-btn" onclick="location.href='food.html'">🍲 Go to Food</button>
+        </div>
+        <!-- Holi -->
+        <div class="festival-text holi-text" id="holi">
+            <h4>History of Holi</h4>
+            <p>Holi's history is rooted in two Hindu mythological stories: the victory of good over evil through the tale of Prahlad and Holika, commemorated by Holika Dahan (bonfires), and the playful divine love between Lord Krishna and Radha. It also marks the arrival of spring, the end of winter, and harvest time, blending spiritual, historical, and cultural traditions.</p>
+            <h5>The Legend of Prahlad and Holika</h5>
+            <ul>
+                <li><strong>The Story:</strong> Demon king Hiranyakashipu demanded worship, but his son Prahlad stayed devoted to Lord Vishnu. Hiranyakashipu’s sister Holika, immune to fire, tried to kill Prahlad.</li>
+                <li><strong>The Outcome:</strong> Holika was consumed by flames, while Prahlad survived by divine intervention.</li>
+                <li><strong>Holika Dahan:</strong> The bonfire ritual the night before Holi, symbolizing victory of good over evil.</li>
+            </ul>
+            <h5>The Legend of Radha and Krishna</h5>
+            <ul>
+               <li><strong>The Story:</strong> Krishna playfully colored Radha's face, inspiring the tradition of throwing colors.</li>
+               <li><strong>The Celebration:</strong> Symbolizes love, joy, and playful mischief.</li>
+            </ul>
+            <h5>Symbolism & Seasonal Significance</h5>
+            <ul>
+                <li><strong>Victory of Good over Evil:</strong> Celebrates virtue and faith triumphing over malevolence.</li>
+                <li><strong>Arrival of Spring:</strong> Marks the end of winter and nature’s renewal.</li>
+                <li><strong>Harvest and Renewal:</strong> A time for fresh beginnings and bountiful harvest.</li>
+            </ul>
+            <h5>Event Date</h5>
+            <p>Holi is celebrated on the full moon day (Purnima) of Phalguna. In 2025, Holi falls on Friday, March 14. The celebration starts a day before with Holika Dahan, also called Chhoti Holi.</p>
+            <h5>How to Celebrate</h5>
+            <h6>Before the Main Day (Holika Dahan)</h6>
+            <ul>
+                <li><strong>Bonfire Ceremony:</strong> Light a bonfire to represent Holika.</li>
+                <li><strong>Prayers and Songs:</strong> Gather with family and friends for rituals and songs celebrating good over evil.</li>
+            </ul>
+            <h6>On the Day of Holi (Rangwali Holi)</h6>
+            <ul>
+                <li><strong>Play with Colors:</strong> Use powdered colors (gulal) and colored water on each other.</li>
+                <li><strong>Water Play:</strong> Water guns or balloons filled with colors.</li>
+                <li><strong>Wear White:</strong> Dress in old white clothes to make the colors pop.</li>
+                <li><strong>Music and Dance:</strong> Enjoy traditional Holi songs and dance.</li>
+                <li><strong>Festive Treats:</strong> Eat gujiya, malpua, and drink thandai.</li>
+                <li><strong>Community & Visiting:</strong> Visit friends and family, exchange sweets, and participate in gatherings.</li>
+            </ul>
+            <button class="explore-btn" ><a href="holi.html" >👘 Go to View Cloths</a></button> 
+            <button class="explore-btn" onclick="location.href='food.html'">🍲 Go to Food</button>
+        </div>
+        <!-- Chinese New Year -->
+        <div class="festival-text chinese-text" id="chinese-new-year">
+            <h4>History of Chinese New Year</h4>
+    <p>Chinese New Year's history dates back thousands of years to the Shang Dynasty (14th century BCE) and is rooted in agricultural practices and the ancient Chinese lunar calendar. Legend says a beast called Nian was scared by loud noises and the color red, leading to traditions like firecrackers and red decorations still used today. Key practices like cleaning homes, large family dinners, and paying respects to ancestors also developed over centuries, with the Han dynasty (202 BC – 220 AD) first recording new year celebrations.</p>
+
+    <h5>Ancient Origins</h5>
+    <ul>
+        <li><strong>Agriculture:</strong> The holiday likely began as a way for ancient agricultural societies to celebrate the end of the harvest and ask for a prosperous year.</li>
+        <li><strong>Lunar Calendar:</strong> Its timing is based on the ancient Chinese lunar calendar, causing the date on the Gregorian calendar to vary annually.</li>
+        <li><strong>Legend of Nian:</strong> A monster called Nian would attack villagers at the beginning of each year. Villagers discovered it feared loud noises, bright lights, and the color red, inspiring firecrackers, fireworks, and red clothing/decorations.</li>
+    </ul>
+
+    <h5>Development of Traditions</h5>
+    <ul>
+        <li><strong>Early Practices:</strong> As early as the Shang Dynasty, people gave gifts to gods and family members during winter. Han dynasty records describe ancestor worship and New Year visits.</li>
+        <li>The 15-day festival begins with the new moon between January 21 and February 20 and ends with the full moon.</li>
+    </ul>
+
+    <h5>Family and Home Traditions</h5>
+    <ul>
+        <li><strong>Family Reunion Dinner:</strong> Families gather to eat symbolic dishes like dumplings, fish, and sticky rice balls.</li>
+        <li><strong>Thorough Cleaning:</strong> Homes are cleaned before the New Year to sweep away bad luck, symbolizing a fresh start.</li>
+        <li><strong>Red Decorations:</strong> Lanterns, paper cuttings, and couplets are used to bring good fortune and ward off evil spirits.</li>
+        <li><strong>Red Envelopes:</strong> Elders give children “lucky money” in red envelopes, and cultural performances like lion dances are common.</li>
+    </ul>
+         <button class="explore-btn" ><a href="chinese.html" >👘 Go to View Cloths</a></button>    
+         <button class="explore-btn" onclick="location.href='food.html'">🍲 Go to Food</button>
+        </div>
+        <!-- Cherry Blossom -->
+        <div class="festival-text cherry-text" id="cherry-blossom">
+            <h4>History of Cherry Blossom Festival (Hanami) - Japan</h4>
+    <p>The tradition of cherry blossom viewing, or <strong>Hanami</strong>, dates back to the Nara Period (710-794) with plum blossoms, shifting to cherry blossoms in the Heian Period (794-1185). Emperor Saga hosted the first recorded cherry blossom viewing in 812. Over time, it became a nationwide cultural phenomenon, symbolizing the ephemeral nature of life (mono no aware).</p>
+
+    <h5>Origins and Early Periods</h5>
+    <ul>
+        <li><strong>Nara Period:</strong> Began with enjoyment of plum blossoms (ume).</li>
+        <li><strong>Heian Period:</strong> Emperor Saga's first cherry blossom viewing party in 812.</li>
+        <li><strong>Symbolism:</strong> Cherry blossoms symbolize the fleeting beauty of life, reflecting impermanence.</li>
+    </ul>
+
+    <h5>Edo Period: Wider Appeal</h5>
+    <ul>
+        <li><strong>Tokugawa Shogunate:</strong> Shogun Tokugawa Yoshimune planted thousands of cherry trees, expanding public access.</li>
+        <li><strong>Public Access:</strong> Hanami became a communal activity rather than an elite pastime.</li>
+    </ul>
+
+    <h5>Modern Transformation</h5>
+    <ul>
+        <li><strong>Communal Culture:</strong> People gather for parties and picnics under cherry trees.</li>
+        <li><strong>Popular Varieties:</strong> Introduction of Somei-yoshino cherry trees in the 19th century accelerated popularity.</li>
+        <li><strong>Enduring Tradition:</strong> Celebrated today as a symbol of spring, renewal, and transient beauty.</li>
+    </ul>
+
+    <h5>When & Where</h5>
+    <ul>
+        <li><strong>Timing:</strong> Spring season, generally from late March to May, with peak bloom in April.</li>
+        <li><strong>Regional Variation:</strong> Southern areas like Okinawa bloom earlier; northern regions like Hokkaido bloom later.</li>
+        <li><strong>Locations:</strong> Numerous local events and parks across Japan during the blooming period.</li>
+    </ul>
+
+    <h5>How to Celebrate / Participate in Hanami</h5>
+    <ul>
+        <li><strong>Picnics:</strong> Gather under cherry trees with family/friends. Bring a blanket and share food and drinks.</li>
+        <li><strong>Food & Drink:</strong> Enjoy bento boxes, sake, and treats from festival stalls.</li>
+        <li><strong>Cultural Events:</strong> Traditional dances, drumming, tea ceremonies, and other performances.</li>
+        <li><strong>Nighttime Viewing (Yozakura):</strong> Lanterns illuminate blossoms after sunset for magical evening experiences.</li>
+        <li><strong>Admire the Scenery:</strong> Relax and appreciate the ephemeral beauty of cherry blossoms.</li>
+    </ul>
+
+    <h5>Etiquette</h5>
+    <ul>
+        <li><strong>Respect the Trees:</strong> Avoid sitting on roots, shaking branches, or touching petals.</li>
+        <li><strong>Be Mindful of Others:</strong> Keep picnic areas tidy and compact.</li>
+        <li><strong>Clean Up:</strong> Dispose of trash responsibly.</li>
+        <li><strong>Keep it Serene:</strong> Avoid loud music and maintain a respectful atmosphere.</li>
+    </ul>
+        <button class="explore-btn" ><a href="cherry.html" >👘 Go to View Cloths</a></button>    
+        <button class="explore-btn" onclick="location.href='food.html'">🍲 Go to Food</button>
+        </div>
+        <!-- Eid-al-Fitr -->
+        <div class="festival-text eid-text" id="eid">
+            <h4>History of Eid al-Fitr</h4>
+    <p>Eid al-Fitr's history begins in 624 CE when Prophet Muhammad established the celebration after the Battle of Badr, marking the end of Ramadan, a holy month of fasting and reflection. The festival commemorates the spiritual discipline of Ramadan and is a time for Muslims to express gratitude, give charity (Zakat), and come together as a community.</p>
+
+    <h5>Key Historical Points</h5>
+    <ul>
+        <li><strong>624 CE:</strong> The first Eid al-Fitr was celebrated following Prophet Muhammad’s migration from Mecca to Medina, becoming a joyous celebration of renewed faith and unity.</li>
+        <li>Traditionally, Muslims attend a special morning prayer, give obligatory charity (Zakat al-Fitr), wear new clothes, and share sweet meals with family and friends.</li>
+        <li>The holiday involves visiting relatives and neighbors, engaging in acts of worship, and spreading joy through kindness and generosity.</li>
+    </ul>
+
+    <h5>Before Eid</h5>
+    <ul>
+        <li><strong>Prepare for Prayer:</strong> Wake up early, bathe, and wear your best or new clothes for the morning Eid prayer.</li>
+        <li><strong>Distribute Zakat al-Fitr:</strong> Give mandatory charity for the poor before the Eid prayer.</li>
+        <li><strong>Decorate:</strong> Decorate homes with lights and festive banners to create a joyful atmosphere.</li>
+    </ul>
+
+    <h5>On the Day of Eid</h5>
+    <ul>
+        <li><strong>Eid Prayer:</strong> Attend a large community prayer service at a mosque.</li>
+        <li>Eid al-Fitr marks the end of Ramadan, celebrated by Muslims worldwide on the first day of Shawwal, the tenth month of the Islamic calendar.</li>
+        <li>Celebrate by wearing new clothes, feasting, visiting family and friends, and enjoying communal celebrations.</li>
+    </ul>
+        <button class="explore-btn" ><a href="eid.html" >👘 Go to View Cloths</a></button>    
+        <button class="explore-btn" onclick="location.href='food.html'">🍲 Go to Food</button>
+        </div>
+        <!-- Onam -->
+        <div class="festival-text onam-text" id="onam">
+            <h4>History of Onam</h4>
+    <p>Onam is an annual Hindu harvest festival in Kerala, India, commemorating the homecoming of King Mahabali. Celebrated in the Malayalam month of Chingam (August-September), it marks agricultural harvest and is a time of equality and prosperity. Traditions include flower carpets (Pookalam), grand feasts (Sadya), boat races (Vallam Kali), and folk dances.</p>
+
+    <h5>Mythological Origin</h5>
+    <ul>
+        <li><strong>King Mahabali's Golden Rule:</strong> A just and benevolent ruler who brought prosperity, equality, and happiness.</li>
+        <li><strong>The Gods' Jealousy:</strong> Gods feared Mahabali’s growing power and sought Lord Vishnu's intervention.</li>
+        <li><strong>Vamana's Intervention:</strong> Vishnu, as dwarf Brahmin Vamana, requested land that he could cover in three steps.</li>
+        <li><strong>Mahabali's Sacrifice:</strong> Mahabali offered his head for the third step, showing devotion.</li>
+        <li><strong>The Boon:</strong> Mahabali was banished to the netherworld but granted to visit his people once a year, celebrated as Onam.</li>
+    </ul>
+
+    <h5>Event Date</h5>
+    <p>In 2025, the 10-day celebration begins on August 26th, with Thiruvonam, the main day, on September 5th.</p>
+
+    <h5>How to Celebrate</h5>
+    <h6>Decorations and Rituals</h6>
+    <ul>
+        <li><strong>Pookalam:</strong> Colorful flower rangoli designs at entrances to welcome King Mahabali.</li>
+        <li><strong>Home Decoration:</strong> Homes and streets decorated with lights and festive items.</li>
+        <li><strong>Prayers:</strong> Worship of Vishnu and other deities with family rituals.</li>
+    </ul>
+
+    <h6>Food and Feasting</h6>
+    <ul>
+        <li><strong>Onam Sadhya:</strong> A lavish vegetarian feast served on banana leaves with traditional dishes and sweets.</li>
+    </ul>
+
+    <h6>Cultural and Social Activities</h6>
+    <ul>
+        <li><strong>Traditional Attire:</strong> White and gold Kerala sarees for women and traditional clothing for men.</li>
+        <li><strong>Games and Sports:</strong> Vallam Kali (snake boat races), Puli Kali (tiger dance), Onathallu (martial arts), and tug-of-war.</li>
+        <li><strong>Dances and Performances:</strong> Thiruvathira and Kaikottikali dances narrating myths and legends.</li>
+        <li><strong>Community Gatherings:</strong> Families and friends come together to celebrate and strengthen bonds.</li>
+    </ul>
+        <button class="explore-btn" ><a href="onam.html" >👘 Go to View Cloths</a></button>   
+        <button class="explore-btn" onclick="location.href='food.html'">🍲 Go to Food</button>
+        </div>
+        <!-- Jeju Fire Festival -->
+        <div class="festival-text jeju-text" id="jeju-fire">
+            <h4>History of Jeju Fire Festival</h4>
+    <p>The Jeju Fire Festival is a modern event, first held in 1997, inspired by the ancient agricultural practice of <strong>bangae</strong>, or field burning, to renew grass and eliminate pests. It symbolizes a fresh start for a prosperous year while celebrating traditional Korean agricultural culture.</p>
+
+    <h5>Origins and Tradition</h5>
+    <ul>
+        <li><strong>Ancient Practice (Bangae):</strong> Farmers burned dry grass at the end of winter to clear fields and encourage healthy new growth.</li>
+        <li><strong>Symbolism:</strong> The burning ritual was meant to eliminate pests, pray for a good harvest, and bring health and wealth for the year.</li>
+    </ul>
+
+    <h5>The Modern Festival</h5>
+    <ul>
+        <li><strong>Creation:</strong> Launched in 1997 to boost tourism and the regional economy.</li>
+        <li><strong>Location and Timing:</strong> Annually in March at Saebyeol Oreum Volcanic Cone.</li>
+        <li><strong>Activities:</strong> Torch marches, fire performances, media art shows, and a large bonfire on a volcanic mound.</li>
+    </ul>
+
+    <h5>Recent Challenges and Adaptations</h5>
+    <ul>
+        <li><strong>Cancellations:</strong> Canceled in some years due to wildfire risks and environmental concerns.</li>
+        <li><strong>Eco-Friendly Approaches:</strong> Media art and digital technology are now used to create a virtual blaze for safety and sustainability.</li>
+    </ul>
+
+    <h5>2025 Festival Details</h5>
+    <ul>
+        <li><strong>Dates:</strong> March 14th – March 16th, 2025.</li>
+        <li><strong>Location:</strong> Saebyeol Oreum Volcanic Cone, Jeju Island, South Korea.</li>
+        <li><strong>Celebrations:</strong> Torch processions, cultural performances, folk games, lantern releases, local food like Jeju black pork and omegi-tteok.</li>
+        <li><strong>Climax:</strong> Large bonfire and fireworks to bless the upcoming harvest and bring good luck.</li>
+    </ul>
+        <button class="explore-btn" ><a href="jeju.html" >👘 Go to View Cloths</a></button>  
+        <button class="explore-btn" onclick="location.href='food.html'">🍲 Go to Food</button>
+        </div>
+        <!-- Banjara Folk Tradition -->
+        <div class="festival-text banjara-text" id="banjara">
+            <h4>History of Banjara Folk Tradition</h4>
+    <p>The Banjara community historically emerged from nomadic pastoralist traders in India, with roots in Rajasthan. They transported goods like salt and grains using animal caravans, and their oral traditions, rich in folk songs, dances, and unique crafts such as intricate embroidery, form the core of their folk culture. Today, many Banjaras have settled into farming and mainstream professions, while still maintaining their distinctive cultural practices and festivals.</p>
+
+    <h5>Historical Background</h5>
+    <ul>
+        <li><strong>Nomadic Traders:</strong> Banjaras were known for transporting goods via caravans called tandas.</li>
+        <li><strong>Economic Role:</strong> They supplied grains, salt, and other commodities to villages and armies.</li>
+        <li><strong>Origins:</strong> The community originated from Rajasthan and migrated across India.</li>
+        <li><strong>Transition:</strong> The advent of railways and the end of Mughal rule reduced their traditional trade.</li>
+        <li><strong>Settlement:</strong> Many Banjaras now farm, raise cattle, and work in mainstream professions.</li>
+    </ul>
+
+    <h5>Folk Traditions</h5>
+    <ul>
+        <li><strong>Oral Tradition:</strong> History and customs are preserved through stories, songs, myths, and proverbs.</li>
+        <li><strong>Arts and Crafts:</strong> Elaborate embroidered clothing, beaded decorations, and ornate jewellery.</li>
+    </ul>
+
+    <h5>Major Festivals and Celebrations</h5>
+    <ul>
+        <li><strong>Teej:</strong> Celebrated in Shravana (August) by unmarried girls sowing seeds in bamboo baskets and performing rituals for a good groom.</li>
+        <li><strong>Holi:</strong> Colorful celebrations with kolata dance, bonfires, and communal festivity.</li>
+        <li><strong>Other Hindu Festivals:</strong> Diwali, Dussehra, Ugadi, Ganesh Chaturthi.</li>
+    </ul>
+
+    <h5>Performing Arts</h5>
+    <ul>
+        <li><strong>Dances:</strong> Energetic folk dances performed by men and women in colorful traditional attire adorned with mirrors and beads.</li>
+        <li><strong>Fire Dance:</strong> Traditional dance accompanied by drums.</li>
+        <li><strong>Chari Dance:</strong> Another traditional folk dance.</li>
+        <li><strong>Ghumar (Jhumar):</strong> Performed by women, often with veils over their heads.</li>
+        <li><strong>Music:</strong> Folk songs sung by men and women, often accompanied by percussion, cymbals, and the sarangi.</li>
+    </ul>
+        <button class="explore-btn" ><a href="banjara.html" >👘 Go to View Cloths</a></button>  
+        <button class="explore-btn" onclick="location.href='food.html'">🍲 Go to Food</button>
+        </div>
+    </div>
+    </div>
+     <section id="festivals" class="festivals-section hidden">
+    <header class="festivals-header">
+    <h1>🌍 Festival Event Calendar</h1>
+    <p>Discover cultural festivals around the world</p>
+    </header>
+     <div class="festival-search">
+    <input
+      type="text"
+      id="festival-search-input"
+      placeholder="Search for a festival..."
+    />
+    <button id="festival-search-btn">Search</button>
+    </div>
+    <main>
+    <section class="month-filter">
+      <h2>Select Month</h2>
+      <div class="months">
+        <button onclick="filterByMonth('January')">January</button>
+        <button onclick="filterByMonth('February')">February</button>
+        <button onclick="filterByMonth('March')">March</button>
+        <button onclick="filterByMonth('April')">April</button>
+        <button onclick="filterByMonth('May')">May</button>
+        <button onclick="filterByMonth('June')">June</button>
+        <button onclick="filterByMonth('July')">July</button>
+        <button onclick="filterByMonth('August')">August</button>
+        <button onclick="filterByMonth('September')">September</button>
+        <button onclick="filterByMonth('October')">October</button>
+        <button onclick="filterByMonth('November')">November</button>
+        <button onclick="filterByMonth('December')">December</button>
+      </div>
+    </section>
+
+    <section class="country-section">
+      <h2>Choose Country</h2>
+      <ul class="country-list">
+        <li onclick="showFestivals('India')">India</li>
+        <li onclick="showFestivals('Japan')">Japan</li>
+        <li onclick="showFestivals('USA')">USA</li>
+        <li onclick="showFestivals('Brazil')">Brazil</li>
+        <li onclick="showFestivals('France')">France</li>
+        <li onclick="showFestivals('China')">China</li>
+        <li onclick="showFestivals('Australia')">Australia</li>
+        <li onclick="showFestivals('Germany')">Germany</li>
+      </ul>
+    </section>
+    <section id="festival-display" class="festival-display">
+      <h2>Festival Details</h2>
+      <div id="festival-content" class="festival-content"></div>
+    </section>
+    </main>
+    </section>
+    <div class="explore-content" id="wear">
+    <div class="wear-culture" class="explore-content active">
+            <h1>Wear the Culture</h1>
+            <p>Explore traditional outfits, their history, and cultural significance.</p>  
+        <main class="catalog">
+            <div class="outfit-card">
+                <img src="images/diwali.jpeg" alt="Diwali">
+                <h3>Diwali</h3>
+                <button class="view-btn"><a href="diwali.html" class="view-btn">View Cloths</a></button>
+            </div>
+            <div class="outfit-card">
+                <img src="images/holi.jpeg" alt="Holi">
+                <h3>Holi</h3>
+                <button class="view-btn"><a href="holi.html" class="view-btn">View Cloths</a></button>
+            </div>
+            <div class="outfit-card">
+                <img src="images/onam.jpeg" alt="Onam">
+                <h3>Onam</h3>
+                <button class="view-btn"><a href="onam.html" class="view-btn">View Cloths</a></button>
+            </div>
+            <div class="outfit-card">
+                <img src="images/jeju.jpeg" alt="Jeju Fire Festival">
+                <h3>Jeju Fire Festival</h3>
+                <button class="view-btn"><a href="jeju.html" class="view-btn">View Cloths</a></button>
+            </div>
+            <div class="outfit-card">
+                <img src="images/cherry.jpeg" alt="Cherry Blossom">
+                <h3>Cherry Blossom</h3>
+                <button class="view-btn"><a href="cherry.html" class="view-btn">View Cloths</a></button>
+            </div>
+            <div class="outfit-card">
+                <img src="images/chinese.jpeg" alt="China New Year">
+                <h3>China New Year</h3>
+                <button class="view-btn"><a href="chinese.html" class="view-btn">View Cloths</a></button>
+            </div>
+            <div class="outfit-card">
+                <img src="images/banjara.jpeg" alt="Banjara Folk Tradition">
+                <h3>Banjara Folk Tradition</h3>
+                <button class="view-btn"><a href="banjara.html" class="view-btn">View Cloths</a></button>
+            </div>
+            <div class="outfit-card">
+                <img src="images/eid.jpeg" alt="Muslim's Eid-Al-Fitar">
+                <h3>Muslim's EID-AL-FITAR</h3>
+                <button class="view-btn"><a href="eid.html" class="view-btn">View Cloths</a></button>
+            </div>
+        </main>
+        </div>
+    </div>
+    <div class="explore-content foods" id="food">
+        <h1>Festival Foods</h1>
+    <main>
+    <!-- ✨ Diwali -->
+    <section class="festival-section">
+      <h2 class="festival-title">Diwali</h2>
+      <div class="food-gallery">
+        <div class="food-item">
+          <img src="images/diwalif-1.jpg" alt="Laddu">
+          <p>Laddu</p>
+        </div>
+        <div class="food-item">
+          <img src="images/diwalif-2.jpg" alt="Jalebi">
+          <p>Jalebi</p>
+        </div>
+        <div class="food-item">
+          <img src="images/diwalif-3.jpg" alt="Kaju Katli">
+          <p>Kaju Katli</p>
+        </div>
+      </div>
+    </section>
+    <!-- 🌈 Holi -->
+    <section class="festival-section">
+      <h2 class="festival-title">Holi</h2>
+      <div class="food-gallery">
+        <div class="food-item">
+          <img src="images/holif-1.jpg" alt="Gujiya">
+          <p>Gujiya</p>
+        </div>
+        <div class="food-item">
+          <img src="images/holif-2.jpg" alt="Thandai">
+          <p>Thandai</p>
+        </div>
+        <div class="food-item">
+          <img src="images/holif-3.jpg" alt="Puran Poli">
+          <p>Puran Poli</p>
+        </div>
+      </div>
+    </section>
+    <!-- 🥥 Onam -->
+    <section class="festival-section">
+      <h2 class="festival-title">Onam</h2>
+      <div class="food-gallery">
+        <div class="food-item">
+          <img src="images/onamf-1.jpg" alt="Onam Sadhya">
+          <p>Onam Sadhya</p>
+        </div>   
+    </section>
+    <!-- 🌸 Cherry Blossom -->
+    <section class="festival-section">
+      <h2 class="festival-title">Cherry Blossom (Japan)</h2>
+      <div class="food-gallery">
+        <div class="food-item">
+          <img src="images/japanf-1.jpg" alt="Sakura Mochi">
+          <p>Sakura Mochi</p>
+        </div>
+        <div class="food-item">
+          <img src="images/japanf-2.jpg" alt="Hanami Dango">
+          <p>Hanami Dango</p>
+        </div>
+        <div class="food-item">
+          <img src="images/japanf-3.jpg" alt="Bento">
+          <p>Bento</p>
+        </div>
+      </div>
+    </section>
+    <!-- 🏮 Chinese New Year -->
+    <section class="festival-section">
+      <h2 class="festival-title">Chinese New Year</h2>
+      <div class="food-gallery">
+        <div class="food-item">
+          <img src="images/chainaf-1.jpg" alt="Dumplings">
+          <p>Dumplings</p>
+        </div>
+        <div class="food-item">
+          <img src="images/chainaf-2.jpg" alt="Spring Rolls">
+          <p>Spring Rolls</p>
+        </div> 
+      </div>
+    </section>
+    <!-- 🌙 Eid-al-Fitr -->
+    <section class="festival-section">
+      <h2 class="festival-title">Eid-al-Fitr</h2>
+      <div class="food-gallery">
+        <div class="food-item">
+          <img src="images/eidf-1.jpg" alt="Sheer Kurma">
+          <p>Sheer Kurma</p>
+        </div>
+        <div class="food-item">
+          <img src="images/eidf-2.jpg" alt="Biryani">
+          <p>Biryani</p>
+        </div>
+        <div class="food-item">
+          <img src="images/eidf-3.jpg" alt="Seviyan">
+          <p>Seviyan</p>
+        </div>
+      </div>
+    </section>
+    <!-- 🔥 Jeju Fire Festival -->
+    <section class="festival-section">
+      <h2 class="festival-title">Jeju Fire Festival</h2>
+      <div class="food-gallery">
+        <div class="food-item">
+          <img src="images/jejuf-1.jpg" alt="Jeju BBQ">
+          <p>Jeju BBQ</p>
+        </div>
+        <div class="food-item">
+          <img src="images/jejuf-2.jpg" alt="Seafood">
+          <p>Seafood</p>
+        </div>
+        <div class="food-item">
+          <img src="images/jejuf-3.jpg" alt="Tteokbokki">
+          <p>Tteokbokki</p>
+        </div>
+      </div>
+    </section>
+    <!-- 🎶 Banjara Tradition -->
+    <section class="festival-section">
+      <h2 class="festival-title">Banjara Folk Tradition</h2>
+      <div class="food-gallery">
+        <div class="food-item">
+          <img src="images/banjaraf-1.jpg" alt="Bajra Roti">
+          <p>Bajra Roti</p>
+        </div>
+        <div class="food-item">
+          <img src="images/banjaraf-2.jpg" alt="Dal">
+          <p>Dal</p>
+        </div>
+      </div>
+    </section>
+    </main>
+    </div>
+    </section>
+    <div class="chat-container" id="chatbot">
+    <div class="chat-header">🌍 Heritage Hub Assistant + Translator</div>
+    <div id="chat-body" class="chat-body"></div>
+    <div class="input-container">
+      <input id="user-input" type="text" placeholder="Type your message..." autocomplete="off" />
+      <button id="send-btn">Send</button>
+    </div>
+    </div>
+    <section class="about-section" id="about">
+    <div class="about-container">
+    <h2>About Us</h2>
+    <p class="mission">
+      At <strong>Heritage Hub</strong>, we believe that culture is the soul of humanity.
+      Our platform helps you <em>explore, experience, and celebrate world cultures</em> 
+      in one place — from traditional clothing and cuisine to festivals, etiquette, and wedding rituals.
+    </p>
+    <div class="about-grid">
+      <div class="about-card">
+        <h3>🌍 Explore Cultures</h3>
+        <p>Discover traditions, festivals, clothing, and etiquette from every corner of the globe.</p>
+      </div>
+      <div class="about-card">
+        <h3>🍲 Food & Festivals</h3>
+        <p>Dive into authentic cultural flavors and global celebrations with our interactive explorer tools.</p>
+      </div>
+      <div class="about-card">
+        <h3>🪔 Cultural Traditions</h3>
+        <p>Learn how different cultures celebrate love and marriage with unique customs and attire.</p>
+      </div>
+      <div class="about-card">
+        <h3>🤖 AI Cultural Buddy</h3>
+        <p>Ask questions, get etiquette tips, and translate greetings for your travel or learning journey.</p>
+      </div>
+    </div>
+    </div>
+    </section>  
+    <!-- Contact Form -->
+    <section id="contact" class="contact-section">
+    <h2>Get in Touch</h2>
+    <form>
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Last Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <select>
+            <option>General Inquiry</option>
+            <option>Group Booking</option>
+            <option>Personalized Recommendation</option>
+        </select>
+        <textarea placeholder="Message"></textarea>
+        <input type="text" placeholder="Preferred Contact Method">
+        <input type="tel" placeholder="Phone Number">
+        <button type="submit">Send Message</button>
+    </form>
+    <div class="contact-details">
+        <div>
+            <h3>Main Office</h3>
+            <p>Heritage Travel HQ, Global City</p>
+        </div>
+        <div>
+            <h3>Phone Support</h3>
+            <p>+1 555-123-4567 (24/7, Multi-language)</p>
+        </div>
+        <div>
+            <h3>Email Support</h3>
+            <p>info@heritageatlas.com</p>
+        </div>
+        <div>
+            <h3>Operating Hours</h3>
+            <p>Mon-Fri: 8:00 AM-7:00 PM, Sat-Sun: 10:00 AM-5:00 PM</p>
+        </div>
+        </div>
+    </section>
+    
+
+    <script>
+    const festivalBtns = document.querySelectorAll(".festival-btn");
+    const festivalTexts = document.querySelectorAll(".festival-text");
+    festivalBtns.forEach(btn => {
+      btn.addEventListener("click", () => {
+      festivalBtns.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      festivalTexts.forEach(ft => ft.style.display = "none");
+      const targetId = btn.getAttribute("data-target");
+      const targetElement = document.getElementById(targetId);
+      if(targetElement) targetElement.style.display = "block";
+    });
+    });
+    </script>
+    <script>
+     function showExploreContent(sectionId) {
+  // Hide all sections
+  document.querySelectorAll('.explore-content').forEach(el => {
+    el.classList.remove('active');
+    el.classList.add('hidden');
+  });
+
+  // Show the clicked section
+  const target = document.getElementById(sectionId);
+  if (target) {
+    target.classList.add('active');
+    target.classList.remove('hidden');
+    target.scrollIntoView({ behavior: 'smooth' });
+  }
+  }
+    </script>
+    <script src="js/events.js" defer></script>
+    <script src="js/chatbot.js"></script>
+</body>
+</html> 

@@ -1,0 +1,227 @@
+
+
+.cta-section {
+  text-align: center;
+  padding: 50px 20px;
+  background: rgb(254, 194, 160); 
+}
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+.cta-section p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  color: #666;
+}
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+.explore-btn {
+  background:#cf5914;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.explore-btn:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+.explore-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+.explore-btn a{
+    text-decoration: none;
+    color:white;
+}
+.hidden-section {
+  display: none; 
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  justify-items: center;
+}
+.festival-btn {
+  background: #cf5914; 
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.festival-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+.festival-content {
+  background: #fff5f0;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  color: #333;
+  margin-top: 15px;
+}
+.festival-text {
+  display: none;
+}
+.festival-text#diwali {
+  display: block;
+}
+.festival-text h4 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+.festival-text h5 {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.festival-text p, .festival-text li {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.festival-text ol, .festival-text ul {
+  margin-left: 20px;
+}
+.festival-text button.explore-btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 25px;
+  background: #cf5914;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.festival-text button.explore-btn:hover {
+  transform: translateY(-3px);
+}
+.festival-text {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 20px 0;
+  padding: 30px;
+  color: #fff;
+  z-index: 1;
+  background: rgba(0,0,0,0.4); 
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.25);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+.festival-text::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: cover;
+  background-position: center;
+  filter: blur(6px) brightness(0.6); 
+  z-index: -1; 
+}
+.diwali-text::before {
+  background-image: url("../images/diwali.jpeg");
+}
+.holi-text::before {
+  background-image: url("../images/holi.jpeg");
+}
+.chinese-text::before {
+  background-image: url("../images/chinese.jpeg");
+}
+.cherry-text::before{
+  background-image: url("../images/cherry.jpeg");
+}
+.eid-text::before{
+    background-image: url("../images/eid.jpeg");
+}
+.onam-text::before{
+    background-image: url("../images/onam.jpeg");
+}
+.jeju-text::before{
+    background-image: url("../images/jeju.jpeg");
+}
+.banjara-text::before{
+    background-image: url("../images/banjara.jpeg");
+}
+.explore-culture-container {
+  background: rgba(254, 194, 160, 0.3);     
+  backdrop-filter: blur(12px);              
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  max-width: 1200px;                        
+  margin: 50px auto;                        
+  padding: 40px 30px;                       
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+.explore-culture-container h2 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px rgba(0,0,0,0.3);
+  text-align: center; 
+  justify-content: center;
+  align-items: center;
+}
+.explore-culture-container .festival-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.explore-culture-container .festival-buttons .festival-btn {
+  background: #cf5914;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.explore-culture-container .festival-buttons .festival-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+.explore-culture-container .festival-texts {
+  width: 100%;   
+}
+.explore-culture-container {
+  background: rgba(254, 194, 160, 0.3);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 40px 30px;
+  color: #fff;
+}
+
+.explore-content {
+  display: none;
+}
+
+.explore-content.active {
+  display: block;
+}
+

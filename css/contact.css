@@ -1,0 +1,76 @@
+
+.contact-section {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 3em 5em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    max-width: 900px;
+    width: 80%; 
+}
+.contact-section form {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.contact-section {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 3em 5em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    max-width: 900px;
+    width: 80%;
+    margin: auto; 
+}
+.contact-section input,
+.contact-section select,
+.contact-section textarea {
+    padding: 0.7em;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.3);
+    color: #000000;
+    backdrop-filter: blur(5px);
+}
+.contact-section button {
+    padding: 12px 25px;
+    background-color: #cf5914;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.contact-section button:hover {
+    background-color: #b04610;
+}
+.contact-section h2{
+    color: #000000;
+}
+.contact-details {
+    flex: 1;
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.contact-details h3{
+    color:black;
+}
+.contact-section {
+    max-width: 900px;
+    width: 80%;
+    margin: 0 auto; 
+}
