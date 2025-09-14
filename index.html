@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/chatbot.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/wear.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
     <title>Heritage-Hub</title>
 </head>
 <body>
@@ -671,7 +671,9 @@
       festivalTexts.forEach(ft => ft.style.display = "none");
       const targetId = btn.getAttribute("data-target");
       const targetElement = document.getElementById(targetId);
-      if(targetElement) targetElement.style.display = "block";
+      if(targetElement) {targetElement.style.display = "block";
+        setTimeout(() => { AOS.refresh(); }, 50);
+       }
     });
     });
     </script>
@@ -693,12 +695,23 @@
   }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000,
-            offset: 100,
-        });
-    </script>
+<script>
+  window.addEventListener('load', function() {
+    if (window.AOS) {
+      AOS.init({
+        duration: 1000,
+        offset: 100,
+        
+      });
+      
+      AOS.refresh();
+    } else {
+      console.error('AOS failed to load.');
+    }
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="js/events.js" defer></script>
     <script src="js/chatbot.js"></script>
 </body>
