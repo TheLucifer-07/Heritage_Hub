@@ -6,29 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Banjara Folk Outfits</title>
   <link rel="stylesheet" href="css/wear.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 </head>
 <body>
-  <header class="header1">
+  <header class="header1" data-aos="fade-down">
     <h1>Banjara Folk Outfits</h1>
    
   </header>
 
   <main>
-    <article class="outfit-article">
-      <img src="imges/banjara-1.jpg" alt="Traditional Banjara Dress">
+    <article class="outfit-article" data-aos="fade-right">
+      <img src="imges/banjara-1.jpg" alt="Traditional Banjara Dress" data-aos="flip-up">
       <div class="outfit-info">
         <h2>Traditional Dress</h2>
         <p>Banjara women wear colorful embroidered skirts, blouses, and heavy jewelry with mirror work.</p>
       </div>
     </article>
 
-    <article class="outfit-article">
-      <img src="images/banjara-2.jpg" alt="Men’s Outfit">
+    <article class="outfit-article" data-aos="fade-right">
+      <img src="images/banjara-2.jpg" alt="Men’s Outfit" data-aos="flip-up">
       <div class="outfit-info">
         <h2>Men’s Traditional Outfit</h2>
         <p>Banjara men wear dhotis and turbans, often decorated with shells and beads.</p>
       </div>
     </article>
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, 
+      offset: 100,    
+      once: true      
+    });
+  </script>
 </body>
+  
 </html>
