@@ -6,17 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Diwali Outfits</title>
   <link rel="stylesheet" href="css/wear.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
 </head>
 
 <body>
-  <header class="header1">
+  <header class="header1" data-aos="fade-down">
      <h1>Diwali Traditional Outfits</h1>
   </header>
 
   <main>
     
-    <article class="outfit-article">
-      <img src="images/diwali-1.jpg" alt="Diwali Saree">
+    <article class="outfit-article" data-aos="fade-right">
+      <img src="images/diwali-2.jpg" alt="Diwali Saree" data-aos="flip-right">
       <div class="outfit-info">
         <h2>Festive Saree</h2>
         <p>
@@ -25,8 +27,8 @@
         </p>
       </div>
     </article>
-    <article class="outfit-article">
-      <img src="images/diwali-2.jpg" alt="Kurta for Men">
+    <article class="outfit-article" data-aos="fade-right">
+      <img src="images/diwali-1.jpg" alt="Kurta for Men" data-aos="flip-right">
       <div class="outfit-info">
         <h2>Kurta Pyjama</h2>
         <p>
@@ -37,8 +39,8 @@
     </article>
 
     
-    <article class="outfit-article">
-      <img src="images/diwali-3.jpg" alt="Lehenga">
+    <article class="outfit-article" data-aos="fade-right">
+      <img src="images/diwali-3.jpg" alt="Lehenga data-aos="flip-right"">
       <div class="outfit-info">
         <h2>Lehenga Choli</h2>
         <p>
@@ -50,5 +52,12 @@
     </article>
   </main>
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, 
+      offset: 100,    
+      once: true     
+    });
+  </script>
 </html>
