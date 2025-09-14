@@ -6,29 +6,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chinese New Year Outfits</title>
   <link rel="stylesheet" href="css/wear.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
 </head>
 <body>
-  <header class="header1">
+  <header class="header1" data-aos="fade-down">
     <h1>Chinese New Year Outfits</h1>
     
   </header>
 
   <main>
-    <article class="outfit-article">
-      <img src="images/chaina-1.jpg" alt="Qipao Dress">
+    <article class="outfit-article" data-aos="fade-right">
+      <img src="images/chaina-1.jpg" alt="Qipao Dress" data-aos="flip-right">
       <div class="outfit-info">
         <h2>Qipao (Cheongsam)</h2>
         <p>The elegant Qipao is a popular dress for women, often in red or gold to symbolize luck and prosperity.</p>
       </div>
     </article>
 
-    <article class="outfit-article">
-      <img src="images/chaina-2.jpg" alt="Tang Suit">
+    <article class="outfit-article" data-aos="fade-right">
+      <img src="images/chaina-2.jpg" alt="Tang Suit" data-aos="flip-right">
       <div class="outfit-info">
         <h2>Tang Suit</h2>
         <p>Men wear Tang suits, traditional jackets embroidered with dragons or lucky patterns, usually in red.</p>
       </div>
     </article>
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      offset: 100,   
+      once: true      
+    });
+  </script>
 </body>
 </html>
